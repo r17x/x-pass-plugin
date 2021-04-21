@@ -3,7 +3,7 @@
 
 <p align="center">
 <img 
-src="https://raw.githubusercontent.com/ri7nz/x-pass-plugin/blob/master/README.png" alt="password store preview" />
+src="https://github.com/ri7nz/x-pass-plugin/blob/master/README.png?raw=true" alt="password store preview" />
 </p>
 
 ## Install

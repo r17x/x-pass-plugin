@@ -5,9 +5,9 @@
 #  <xbar.author>ri7nz</xbar.author>
 #  <xbar.author.github>ri7nz</xbar.author.github>
 #  <xbar.desc>password store with xbar</xbar.desc>
-#  <xbar.image>https://raw.githubusercontent.com/ri7nz/x-pass-plugin/master/xbar.image.png</xbar.image>
+#  <xbar.image>https://github.com/ri7nz/x-pass-plugin/blob/master/xbar.image.png?raw=true</xbar.image>
 #  <xbar.dependencies>pass,cut,gpg</xbar.dependencies>
-#  <xbar.abouturl>https://github.com/ri7nz/x-pass-plugin/README.md</xbar.abouturl>
+#  <xbar.abouturl>https://github.com/ri7nz/x-pass-plugin</xbar.abouturl>
 
 # maybe you need change the path of pass or cut bin
 # use where if you didn't know where pass or cut path
