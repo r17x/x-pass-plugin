@@ -32,13 +32,13 @@ src="https://github.com/ri7nz/x-pass-plugin/blob/master/README.png?raw=true" alt
 ### How to Install
 #### Use with `curl` or `wget`
 ```shell
-> curl -o ~/Library/Application\ Support/xbar/plugins/pass.sh \
-https://github.com/ri7nz/x-pass-plugin/blob/master/pass.sh?raw=true  
+> curl https://github.com/ri7nz/x-pass-plugin/blob/master/pass.sh\?raw=true \
+  -o ~/Library/Application\ Support/xbar/plugins/pass.sh 
 
-# OR
+> # OR
 
-> wget -O ~/Library/Application\ Support/xbar/plugins/pass.sh \
-https://github.com/ri7nz/x-pass-plugin/blob/master/pass.sh?raw=true  
+> wget https://github.com/ri7nz/x-pass-plugin/blob/master/pass.sh\?raw=true -O \
+  ~/Library/Application\ Support/xbar/plugins/pass.sh 
 
 ```
 #### Browse in Plugin
