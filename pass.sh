@@ -26,12 +26,12 @@ if (command -v cut && command -v pass)&>/dev/null;then
  
   # location of password-store file
   cd ~/.password-store || exit
-  for filename in $(find . -type f -name '*.gpg'); do
-    # remove file extension
-    name=${filename:2}
-    name=${filename%.*}
-    echo "${name} | bash='$0' param1='${name}' terminal=false"
-  done
+  while IFS= read -r -d '' filename
+  do
+    filename=${filename:2}
+    filename=${filename%.*}
+    echo "${filename} | bash='$0' param1='${filename}' terminal=false"
+  done < <(find . -type f -name '*.gpg' -print0)
 else
   echo "pass or cut insn't installed, please install"
 fi
