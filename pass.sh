@@ -33,7 +33,7 @@ if (command -v cut && command -v pass)&>/dev/null;then
       while IFS= read -r -d '' filename
       do
         filename="${filename%.*}"
-        echo "-- $(basename $filename) | bash='$0' param1='${filename}' terminal=false"
+        echo "-- $(basename "${filename}") | bash='$0' param1='${filename}' terminal=false"
       done < <(find "$dirname" -type f -name '*.gpg' -print0)
   done < <(find ./* -maxdepth 1 -type d -print0)
 else
