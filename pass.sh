@@ -26,12 +26,16 @@ if (command -v cut && command -v pass)&>/dev/null;then
  
   # location of password-store file
   cd ~/.password-store || exit
-  while IFS= read -r -d '' filename
+  while IFS= read -r -d '' dirname
   do
-    filename=${filename:2}
-    filename=${filename%.*}
-    echo "${filename} | bash='$0' param1='${filename}' terminal=false"
-  done < <(find . -type f -name '*.gpg' -print0)
+    dirname=${dirname:2}
+    echo "${dirname}"
+      while IFS= read -r -d '' filename
+      do
+        filename="${filename%.*}"
+        echo "-- ${filename} | bash='$0' param1='${filename}' terminal=false"
+      done < <(find "$dirname" -type f -name '*.gpg' -print0)
+  done < <(find ./* -maxdepth 1 -type d -print0)
 else
   echo "pass or cut insn't installed, please install"
 fi
