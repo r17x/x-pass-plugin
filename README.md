@@ -10,19 +10,42 @@ src="https://github.com/ri7nz/x-pass-plugin/blob/master/README.png?raw=true" alt
 <!-- vim-markdown-toc GFM -->
 
 * [Features](#features)
-* [Install](#install)
+  * [Prerequisite](#prerequisite)
+  * [How to Install](#how-to-install)
+    * [Use with `curl` or `wget`](#use-with-curl-or-wget)
+    * [Browse in Plugin](#browse-in-plugin)
 * [License](#license)
 
 <!-- vim-markdown-toc -->
+   
 ## Features
-* Show list of your password from `pass` ([the standard unix password manager](https://www.passwordstore.org/))
-* Copy to Clipboard by click an item in list of `pass`
 
-## Install
-> required [Xbar](https://xbarapp.com) and [the standard unix password manager](https://www.passwordstore.org/) 
-1. Just download [pass.sh](https://raw.githubusercontent.com/ri7nz/x-pass-plugin/blob/master/pass.sh)
-2. Put in your [Xbar plugin directory](https://xbarapp.com)
-3. Done!
+* [x] Show list of `pass list` in menu bar 
+* [x] Copy to Clipboard by click an item in showing list
+
+### Prerequisite
+   
+* [x] [Xbar](https://xbarapp.com) (_Required_) 
+* [x] [the standard unix password manager](https://www.passwordstore.org/) (_Required_)
+* [ ] [pinentry-mac](https://formulae.brew.sh/formula/pinentry-mac) (_Recommended_)
+   
+### How to Install
+#### Use with `curl` or `wget`
+```shell
+> curl -o ~/Library/Application\ Support/xbar/plugins/pass.sh \
+https://github.com/ri7nz/x-pass-plugin/blob/master/pass.sh?raw=true  
+
+# OR
+
+> wget -O ~/Library/Application\ Support/xbar/plugins/pass.sh \
+https://github.com/ri7nz/x-pass-plugin/blob/master/pass.sh?raw=true  
+
+```
+#### Browse in Plugin
+1. Open menu _**Xbar -> "Plugin Browser"**_
+2. Select _**"Tools"**_
+3. Find _**"x-pass-plugin"**_
+4. Click Install
 
 ## License
 [LICENSE](./LICENSE)

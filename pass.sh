@@ -1,12 +1,12 @@
 #!/bin/bash
 
 #  <xbar.title>Password Store</xbar.title>
-#  <xbar.version>v1.0</xbar.version>
+#  <xbar.version>v1.0.1</xbar.version>
 #  <xbar.author>ri7nz</xbar.author>
 #  <xbar.author.github>ri7nz</xbar.author.github>
 #  <xbar.desc>password store with xbar</xbar.desc>
 #  <xbar.image>https://github.com/ri7nz/x-pass-plugin/blob/master/xbar.image.png?raw=true</xbar.image>
-#  <xbar.dependencies>pass,cut,gpg</xbar.dependencies>
+#  <xbar.dependencies>pass,gpg,pinentry-mac</xbar.dependencies>
 #  <xbar.abouturl>https://github.com/ri7nz/x-pass-plugin</xbar.abouturl>
 
 # maybe you need change the path of pass or cut bin
