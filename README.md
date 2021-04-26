@@ -32,7 +32,7 @@ src="https://github.com/ri7nz/x-pass-plugin/blob/master/README.png?raw=true" alt
 ### How to Install
 #### Use with `curl` or `wget`
 ```shell
-> curl https://github.com/ri7nz/x-pass-plugin/blob/master/pass.sh\?raw=true \
+> curl -L https://github.com/ri7nz/x-pass-plugin/blob/master/pass.sh\?raw=true \
   -o ~/Library/Application\ Support/xbar/plugins/pass.sh 
 
 > # OR
